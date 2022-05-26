@@ -1,0 +1,56 @@
+[
+    {
+        "_id": 1,
+        "name": "SEAGATE BARRACUDA 1TB 7200RPM SATA DESKTOP HDD",
+        "description": "Type SATA Capacity 1TB Interface SATA 6Gb/s RPM Class 7,200 RPM",
+        "img": "https://i.ibb.co/0cXnhBk/Techlandbd-SEAGATE-BARRACUDA-1-TB-jpg-550x550.jpg",
+        "order": 100,
+        "quantity": 10000,
+        "price": 4500
+    },
+    {
+        "_id": 2,
+        "name": "APACER 8GB DDR4 3200MHz SO-DIMM Laptop RAM",
+        "description": "Capacity 8GB Memory Type DDR4 Bus-Speed 3200MHz Single/Dual Sticks Single Sticks Number-Of-Pin 260-Pin",
+        "img": "https://i.ibb.co/ryPvXrK/Apacer-8gb-3200mhz-1-jpg-550x550.jpg",
+        "order": 100,
+        "quantity": 100000,
+        "price": 3500
+    },
+    {
+        "_id": 3,
+        "name": "SEAGATE BARRACUDA 1TB 7200RPM SATA DESKTOP HDD",
+        "description": "Type SATA Capacity 1TB Interface SATA 6Gb/s RPM Class 7,200 RPM",
+        "img": "https://i.ibb.co/0cXnhBk/Techlandbd-SEAGATE-BARRACUDA-1-TB-jpg-550x550.jpg",
+        "order": 100,
+        "quantity": 10000,
+        "price": 3900
+    },
+    {
+        "_id": 4,
+        "name": "SEAGATE BARRACUDA 1TB 7200RPM SATA DESKTOP HDD",
+        "description": "Type SATA Capacity 1TB Interface SATA 6Gb/s RPM Class 7,200 RPM",
+        "img": "https://i.ibb.co/0cXnhBk/Techlandbd-SEAGATE-BARRACUDA-1-TB-jpg-550x550.jpg",
+        "order": 100,
+        "quantity": 10000,
+        "price": 3900
+    },
+    {
+        "_id": 5,
+        "name": "SEAGATE BARRACUDA 1TB 7200RPM SATA DESKTOP HDD",
+        "description": "Type SATA Capacity 1TB Interface SATA 6Gb/s RPM Class 7,200 RPM",
+        "img": "https://i.ibb.co/0cXnhBk/Techlandbd-SEAGATE-BARRACUDA-1-TB-jpg-550x550.jpg",
+        "order": 100,
+        "quantity": 10000,
+        "price": 3900
+    },
+    {
+        "_id": 6,
+        "name": "SEAGATE BARRACUDA 1TB 7200RPM SATA DESKTOP HDD",
+        "description": "Type SATA Capacity 1TB Interface SATA 6Gb/s RPM Class 7,200 RPM",
+        "img": "https://i.ibb.co/0cXnhBk/Techlandbd-SEAGATE-BARRACUDA-1-TB-jpg-550x550.jpg",
+        "order": 100,
+        "quantity": 10000,
+        "price": 3900
+    }
+]
