@@ -19,12 +19,12 @@
     },
     {
         "_id": 3,
-        "name": "SEAGATE BARRACUDA 1TB 7200RPM SATA DESKTOP HDD",
-        "description": "Type SATA Capacity 1TB Interface SATA 6Gb/s RPM Class 7,200 RPM",
-        "img": "https://i.ibb.co/0cXnhBk/Techlandbd-SEAGATE-BARRACUDA-1-TB-jpg-550x550.jpg",
-        "order": 100,
+        "name": "MSI B560M-A PRO Intel 11th Gen MATX Motherboard",
+        "description": "Supports 10th Gen Intel Core Processors, 11th Gen Intel Core Processors, Pentium Gold And Celeron Processors Processor Socket LGA1200",
+        "img": "https://i.ibb.co/VTtZHYL/msi-b560m-a-pro-motherboard-1-jpg-550x550.jpg",
+        "order": 50,
         "quantity": 10000,
-        "price": 3900
+        "price": 10000
     },
     {
         "_id": 4,
