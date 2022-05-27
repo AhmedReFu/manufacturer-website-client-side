@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from './Banner/Banner';
+import Contact from './Contact';
 import Optional from './Optional';
 import OurCompany from './OurCompany';
 import Products from './Products';
@@ -13,6 +14,8 @@ const Home = () => {
             <Optional></Optional>
             <Summary></Summary>
             <OurCompany></OurCompany>
+            <Contact></Contact>
+
         </div>
     );
 };

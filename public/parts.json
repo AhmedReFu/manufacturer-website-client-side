@@ -4,7 +4,7 @@
         "name": "SEAGATE BARRACUDA 1TB 7200RPM SATA DESKTOP HDD",
         "description": "Type SATA Capacity 1TB Interface SATA 6Gb/s RPM Class 7,200 RPM",
         "img": "https://i.ibb.co/0cXnhBk/Techlandbd-SEAGATE-BARRACUDA-1-TB-jpg-550x550.jpg",
-        "order": 100,
+        "order": 50,
         "quantity": 10000,
         "price": 4500
     },
@@ -13,7 +13,7 @@
         "name": "APACER 8GB DDR4 3200MHz SO-DIMM Laptop RAM",
         "description": "Capacity 8GB Memory Type DDR4 Bus-Speed 3200MHz Single/Dual Sticks Single Sticks Number-Of-Pin 260-Pin",
         "img": "https://i.ibb.co/ryPvXrK/Apacer-8gb-3200mhz-1-jpg-550x550.jpg",
-        "order": 100,
+        "order": 50,
         "quantity": 100000,
         "price": 3500
     },
@@ -28,29 +28,56 @@
     },
     {
         "_id": 4,
-        "name": "SEAGATE BARRACUDA 1TB 7200RPM SATA DESKTOP HDD",
-        "description": "Type SATA Capacity 1TB Interface SATA 6Gb/s RPM Class 7,200 RPM",
-        "img": "https://i.ibb.co/0cXnhBk/Techlandbd-SEAGATE-BARRACUDA-1-TB-jpg-550x550.jpg",
-        "order": 100,
+        "name": "Deepcool RF120 FS (3xFAN) Trio LED Case Fan",
+        "description": "Model: Deepcool RF120 FS (3xFAN) Type: Casing Cooling Fan Blade Qty:9-Blade Power Sources:  2.04 W Fan Speed: 500 - 1500 RPM +-10% Voltage: 12VDC",
+        "img": "https://i.ibb.co/yV4shx5/deepcool-rf120-fs-3xfan-rgb-case-fan-jpg-550x550.jpg",
+        "order": 50,
         "quantity": 10000,
-        "price": 3900
+        "price": 1500
     },
     {
         "_id": 5,
-        "name": "SEAGATE BARRACUDA 1TB 7200RPM SATA DESKTOP HDD",
-        "description": "Type SATA Capacity 1TB Interface SATA 6Gb/s RPM Class 7,200 RPM",
-        "img": "https://i.ibb.co/0cXnhBk/Techlandbd-SEAGATE-BARRACUDA-1-TB-jpg-550x550.jpg",
-        "order": 100,
+        "name": "DEEPCOOL MATREXX 55 MESH ADD-RGB 4F Mid Tower Gaming Case",
+        "description": "Brand : DEEPCOOL Model : MATREXX 55 MESH ADD-RGB 4F Motherboard : Mini-ITX/Micro-ATX/ATX/E-ATX Case Type : Middle Tower Materials : ABS+SPCC+Tempered Glass Weight : 8.1 Kg Product Dimensions : 21 X 44 X 48 Cm Included Components : Case And 4 X 120 Mm Fan Batteries Required : No",
+        "img": "https://i.ibb.co/1bFR7f9/DEEPCOOL-MATREXX-55-MESH-Case-8-jpg-550x550.jpg",
+        "order": 50,
         "quantity": 10000,
-        "price": 3900
+        "price": 6000
     },
     {
         "_id": 6,
-        "name": "SEAGATE BARRACUDA 1TB 7200RPM SATA DESKTOP HDD",
-        "description": "Type SATA Capacity 1TB Interface SATA 6Gb/s RPM Class 7,200 RPM",
-        "img": "https://i.ibb.co/0cXnhBk/Techlandbd-SEAGATE-BARRACUDA-1-TB-jpg-550x550.jpg",
-        "order": 100,
+        "name": "CORSAIR CX550M 550 Watt 80 PLUS BRONZE Certified Modular Power Supply",
+        "description": "80 PLUS Bronze certified efficiency Continuous power: 550 Watts Fan size mm: 140mm PSU Form Factor: ATX",
+        "img": "https://i.ibb.co/CV5xMWw/corsair-cx550m-semi-modular-atx-power-supply-price-in-bd-jpg-550x550w.jpg",
+        "order": 50,
         "quantity": 10000,
-        "price": 3900
+        "price": 5000
+    },
+    {
+        "_id": 7,
+        "name": "VIEWSONIC XG2405-2 24 Inch 144Hz AMD FreeSync IPS Gaming Monitor",
+        "description": "The ViewSonic XG2405 Is A 24” IPS-Panel Gaming Monitor With 1ms Response Time, A 144Hz Refresh Rate, And AMD FreeSync Technology, Providing The Perfect Blend Of Speed, Hyper-Responsive Control, And Vivid IPS Colours. Engineered For Hardcore And Casual Gamers Alike, The XG2405'S Sleek, 3-Side Borderless, Ergonomic Design Make It The Ideal Choice For Any Gaming Setup",
+        "img": "https://i.ibb.co/25VYXHQ/viewsonic-xg2405-24-inch-144hz-monitor-review-png-550x550.png",
+        "order": 50,
+        "quantity": 1000,
+        "price": 25000
+    },
+    {
+        "_id": 8,
+        "name": "NVIDIA QUADRO P620 2 GB GDDR5 GRAPHICS CARD",
+        "description": "Memory 2 GB GDDR5 Memory Interface 128-bit Memory Bandwidth Up to 80 GB/s NVIDIA CUDA Cores 512",
+        "img": "https://i.ibb.co/CV5xMWw/corsair-cx550m-semi-modular-atx-power-supply-price-in-bd-jpg-550x550w.jpg",
+        "order": 50,
+        "quantity": 10000,
+        "price": 20000
+    },
+    {
+        "_id": 9,
+        "name": "KIOXIA EXCERIA PRO 1TB PCIE M.2 2280 GEN4 NVME SSD",
+        "description": "Capacity : 1TB NVMe 1.4 Technology M.2 2280 Form Factor PCIe Gen4 x4",
+        "img": "https://i.ibb.co/9YHwwpX/kioxia-exceria-pro-1tb-ssd-02-jpg-550x550.jpg",
+        "order": 50,
+        "quantity": 10000,
+        "price": 5000
     }
 ]

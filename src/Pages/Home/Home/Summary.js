@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import BusinessHistory from '../BusineesHistory/BusinessHistory';
 
 const Summary = () => {
+    const navigate = useNavigate();
     return (
         <div>
             <h2 className='text-primary text-7xl text-center font-bold pt-14'>Our Business Summary</h2>
@@ -15,10 +17,12 @@ const Summary = () => {
                     <h3 className='text-xl font-bold'>Don't hesitate to contact us</h3>
                 </div>
                 <div className='ml-14 p-4'>
-                    <button class="btn btn-primary text-xl mx-14">Contact Us</button>
+                    <button onClick={() => navigate('/product')} class="btn btn-primary text-xl mx-8">Buy Now</button>
+
+                    <a class="btn btn-primary text-xl" href="/#contact">Contact Us</a>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
