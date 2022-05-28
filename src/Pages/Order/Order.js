@@ -51,6 +51,7 @@ const Order = () => {
             totalAmount: totalPrice,
             shippingAddress: address,
             phone: phone,
+            trxId: '',
             img: img
         }
         fetch('http://localhost:5000/order', {

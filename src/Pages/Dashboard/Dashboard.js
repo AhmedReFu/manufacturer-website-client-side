@@ -9,8 +9,8 @@ const Dashboard = () => {
         <div className="drawer bg-purple-200 drawer-mobile">
             <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
-                <h2 className='text-3xl font-bold text-purple-500'>Dashboard</h2>
-                <h2 className='text-2xl font-bold text-purple-500'>{user.displayName}</h2>
+                <h2 className='text-3xl font-bold text-purple-500'>Dashboard {user.displayName}</h2>
+
                 <Outlet></Outlet>
                 {/* <!-- Page content here --> */}
             </div>
