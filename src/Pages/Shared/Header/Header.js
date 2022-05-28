@@ -12,6 +12,7 @@ const Header = ({ props }) => {
     }
     const menus = <>
         <li><Link to='/'>Home</Link></li>
+        <li><Link to='/portfolio'>MyPortfolio</Link></li>
         <li><Link to='/product'>Product</Link></li>
         <li><Link to='/blogs'>Blogs</Link></li>
         <li><Link to='/about'>About</Link></li>

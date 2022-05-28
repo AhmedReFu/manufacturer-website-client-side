@@ -13,7 +13,12 @@ const Order = () => {
     const [totalPrice, setTotalPrice] = useState(null);
     const [error, setError] = useState('');
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`http://localhost:5000/products/${id}`, {
+            method: 'GET',
+            headers: {
+                authorization: `Bearer ${localStorage.getItem('accessToken')}`
+            }
+        })
             .then(res => res.json())
             .then(data => {
                 setProduct(data)
