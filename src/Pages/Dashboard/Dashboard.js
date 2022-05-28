@@ -26,7 +26,9 @@ const Dashboard = () => {
                         admin ?
                             <>
                                 <li><Link to="/dashboard/makeAdmin">Make Admin</Link></li>
-                                <li><Link to="/dashboard/addDoctor">Add a Doctor</Link></li>
+                                <li><Link to="/dashboard/addProduct">Add Product</Link></li>
+                                <li><Link to="/dashboard/manageProducts">Manage Products</Link></li>
+                                <li><Link to="/dashboard/manageorders">Manage All Orders</Link></li>
                             </> :
 
                             <>
