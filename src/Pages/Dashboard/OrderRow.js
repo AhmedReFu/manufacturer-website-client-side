@@ -8,7 +8,7 @@ const OrderRow = ({ order }) => {
         const proceed = window.confirm('Are you sure?');
 
         if (proceed) {
-            const url = `http://localhost:5000/order/${id}`;
+            const url = `https://nameless-oasis-38976.herokuapp.com/order/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

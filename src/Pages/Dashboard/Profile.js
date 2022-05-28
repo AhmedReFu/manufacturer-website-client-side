@@ -29,7 +29,7 @@ const Profile = () => {
             linkdin: linkdin
         }
 
-        fetch(`http://localhost:5000/user/${email}`, {
+        fetch(`https://nameless-oasis-38976.herokuapp.com/user/${email}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

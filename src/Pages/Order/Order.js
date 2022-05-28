@@ -13,7 +13,7 @@ const Order = () => {
     const [totalPrice, setTotalPrice] = useState(null);
     const [error, setError] = useState('');
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${id}`, {
+        fetch(`https://nameless-oasis-38976.herokuapp.com/products/${id}`, {
             method: 'GET',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -60,7 +60,7 @@ const Order = () => {
             trxId: '',
             img: img
         }
-        fetch('http://localhost:5000/order', {
+        fetch('https://nameless-oasis-38976.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

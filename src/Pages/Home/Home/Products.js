@@ -4,7 +4,7 @@ import Product from './Product';
 const Products = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/products', {
+        fetch('https://nameless-oasis-38976.herokuapp.com/products', {
             method: 'GET',
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('accessToken')}`

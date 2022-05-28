@@ -12,7 +12,7 @@ const MyOrder = () => {
     const navigate = useNavigate();
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/order?userEmail=${user.email}`, {
+            fetch(`https://nameless-oasis-38976.herokuapp.com/order?userEmail=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
