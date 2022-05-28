@@ -30,8 +30,8 @@ const OrderRow = ({ order }) => {
         <>
             <tr>
                 <td>{order.userEmail}</td>
-                <td for="my-modal-6" ><button onClick={() => payHandle(order._id)} className='btn'>Pay</button></td>
-                <td><button onClick={() => cancelHandle(order._id)} className='btn bg-red-500'>Delete</button></td>
+                <td for="my-modal-6" ><button onClick={() => payHandle(order._id)} className=' btn btn-xs'>Pay</button></td>
+                <td><button onClick={() => cancelHandle(order._id)} className='btn bg-red-500 btn-xs'>Delete</button></td>
                 <td>{order.trxId}</td>
                 <td>{order.productName}</td>
                 <td>{order.totalAmount}</td>

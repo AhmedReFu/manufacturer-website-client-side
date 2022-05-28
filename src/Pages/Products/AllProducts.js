@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useQuery } from 'react-query';
 import Product from '../Home/Home/Product';
 import Loading from '../Shared/Loading/Loading';
 
@@ -7,7 +6,12 @@ const AllProducts = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('http://localhost:5000/products', {
+            method: 'GET',
+            headers: {
+                'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+            }
+        })
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])

@@ -20,9 +20,10 @@ const MyOrder = () => {
             })
                 .then(res => {
                     if (res.status === 401 || res.status === 403) {
-                        signOut(auth);
+
                         localStorage.removeItem('accessToken');
-                        navigate('/');
+                        signOut(auth);
+                        navigate('/')
                     }
                     return res.json();
                 })
@@ -32,7 +33,8 @@ const MyOrder = () => {
 
                 })
         }
-    }, [navigate, user, items])
+    }, [items])
+
     return (
         <div>
             <h2 className="text-2xl">All Order</h2>
