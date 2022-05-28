@@ -21,3 +21,7 @@ Open [Heroku APin](https://nameless-oasis-38976.herokuapp.com/)
 ## it use both client and admin user control admin anywhare
 ## admin all product user and orders  manange
 ## it respohnsiv for mobile and deskotop
+
+## Admin User
+admin:- admin@computerpartsworld.com
+pass:- 123456
