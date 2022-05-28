@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const OrderRow = ({ order }) => {
     const [products, setProducts] = useState([]);
@@ -16,6 +17,7 @@ const OrderRow = ({ order }) => {
                     console.log(data);
                     const remaining = products.filter(item => item._id !== id)
                     setProducts(remaining);
+                    toast.success('Order Cancel Successfully')
                 })
         }
 

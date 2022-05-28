@@ -33,7 +33,7 @@ const MyOrder = () => {
 
                 })
         }
-    }, [items])
+    }, [])
 
     return (
         <div>
