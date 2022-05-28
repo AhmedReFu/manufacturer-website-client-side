@@ -11,6 +11,12 @@ const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
     const navigate = useNavigate();
+    const signInGoogle = () => {
+        signInWithGoogle();
+        toast('user login success')
+        navigate('/')
+
+    }
     const [
         signInWithEmailAndPassword,
         user,
@@ -32,6 +38,7 @@ const Login = () => {
         console.log(data);
         signInWithEmailAndPassword(data.email, data.password);
         toast('user login success')
+        navigate('/')
     };
     return (
         <div className='flex h-screen justify-center items-center my-4'>
@@ -95,7 +102,7 @@ const Login = () => {
                     <p>New to Doctors Portal? <Link className='text-secondary' to='/signup'>Create New Account</Link></p>
                     <div className="divider">OR</div>
                     <button
-                        onClick={() => signInWithGoogle()}
+                        onClick={signInGoogle}
                         className="btn btn-outline"
                     > <img className='w-8 mr-3' src={google} alt="" />Continue With Google</button>
                 </div>
