@@ -20,7 +20,7 @@ const Dashboard = () => {
                     {/* <!-- Sidebar content here --> */}
                     <li><Link to="/dashboard">My Profile</Link></li>
                     <li><Link to="/dashboard/myorder">My Order</Link></li>
-                    <li><Link to="/dashboard/history">My Review</Link></li>
+                    <li><Link to="/dashboard/addreview">My Review</Link></li>
                     {
                         user &&
                         <>
