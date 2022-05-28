@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className='text-xl  py-5 px-5 lg:px-20 flex flex-col gap-2'>
+        <div className='shadow text-xl  py-5 px-5 lg:px-20 flex flex-col gap-2'>
 
             <h1 className='text-xl text-primary font-bold'>Welcome to Computer Parts World, your number one source for all things 100+. We're dedicated to giving you the very best of parts, with a focus on our home page.</h1 >
 

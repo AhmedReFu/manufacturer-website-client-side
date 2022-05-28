@@ -12,17 +12,27 @@ import { ToastContainer } from 'react-toastify';
 import Login from './Pages/Login/Login/Login';
 import SignUp from './Pages/Login/SignUp/SignUp';
 import Order from './Pages/Order/Order';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 
 function App() {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto shadow">
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>} ></Route>
         <Route path='/product' element={<AllProducts></AllProducts>} ></Route>
         <Route path='/blogs' element={<Blogs></Blogs>} ></Route>
         <Route path='/about' element={<About></About>} ></Route>
-        <Route path='/order/:id' element={<Order></Order>} ></Route>
+        <Route path='/order/:id' element={<RequireAuth><Order></Order></RequireAuth>} ></Route>
+
+        <Route path='/dashboard' element={
+          <RequireAuth><Dashboard ></Dashboard></RequireAuth>
+        }>
+
+
+        </Route>
+
         <Route path='/login' element={<Login></Login>} ></Route>
         <Route path='/signup' element={<SignUp></SignUp>} ></Route>
         <Route path='*' element={<NotFound></NotFound>} ></Route>

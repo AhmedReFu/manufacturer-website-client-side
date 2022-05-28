@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
@@ -11,12 +11,15 @@ const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
     const navigate = useNavigate();
+
+    const location = useLocation();
     const signInGoogle = () => {
         signInWithGoogle();
         toast('user login success')
         navigate('/')
 
     }
+    const from = location.state?.from?.pathname || '/';
     const [
         signInWithEmailAndPassword,
         user,
@@ -24,13 +27,16 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    const location = useLocation();
-
+    useEffect(() => {
+        if (user || gUser) {
+            navigate(from, { replace: true });
+        }
+    }, [user, gUser, from, navigate])
     let errorMessage;
-
     if (loading || gLoading) {
         return <Loading></Loading>
     }
+
     if (gError || error) {
         errorMessage = <p className='text-red-500'>{error?.message || gError.message}</p>
     }
@@ -38,7 +44,6 @@ const Login = () => {
         console.log(data);
         signInWithEmailAndPassword(data.email, data.password);
         toast('user login success')
-        navigate('/')
     };
     return (
         <div className='flex h-screen justify-center items-center my-4'>
@@ -99,7 +104,7 @@ const Login = () => {
                         {errorMessage}
                         <input className='btn w-full max-w-xs my-4 text-white' type="submit" value='Login' />
                     </form>
-                    <p>New to Doctors Portal? <Link className='text-secondary' to='/signup'>Create New Account</Link></p>
+                    <p>New to Doctors Portal? <Link className='text-primary' to='/signup'>Create New Account</Link></p>
                     <div className="divider">OR</div>
                     <button
                         onClick={signInGoogle}

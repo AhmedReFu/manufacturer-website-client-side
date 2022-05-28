@@ -27,7 +27,7 @@ const SignUp = () => {
 
     let errorMessage;
 
-    if (loading || gLoading) {
+    if (loading || gLoading || updating) {
         return <Loading></Loading>
     }
     if (error || gError || updateError) {
@@ -119,7 +119,7 @@ const SignUp = () => {
                             {errorMessage}
                             <input className='btn w-full max-w-xs my-4 text-white' type="submit" value='SignUp' />
                         </form>
-                        <p>Already have an account? <Link className='text-secondary' to='/login'>Please Login</Link></p>
+                        <p>Already have an account? <Link className='text-primary' to='/login'>Please Login</Link></p>
                         <div className="divider">OR</div>
                         <button
                             onClick={googleSign}
