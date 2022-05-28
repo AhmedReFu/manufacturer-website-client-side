@@ -7,7 +7,7 @@ This project was taillwind css with [Taillwind](https://tailwindcss.com/).
 ## Live Site
 
 Runs the app in the development mode.\
-Open [Live web site link](https://computer-parts-wrold.netlify.app/login) to view it in your browser.
+Open [Live web site link](https://computer-parts-wrold.netlify.app/) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
