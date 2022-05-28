@@ -8,16 +8,16 @@ const Product = ({ product }) => {
         navigate(`/order/${id}`)
     }
     return (
-        <div class="card w-full bg-base-100 shadow-xl">
+        <div className="card w-full bg-base-100 shadow-xl">
             <figure><img src={img} alt="Shoes" /></figure>
-            <div class="card-body">
-                <h2 class="card-title">{name}</h2>
+            <div className="card-body">
+                <h2 className="card-title">{name}</h2>
                 <p className='text-xl'>{description}</p>
                 <p className='text-xl'>Minimum Order: {order}</p>
                 <p className='text-xl'>Available Product: {quantity}</p>
                 <p className='text-xl'>Per Piece: {price}</p>
-                <div class="card-actions">
-                    <button onClick={() => navigateToServiceDetail(_id)} class="btn btn-primary">Buy Now</button>
+                <div className="card-actions">
+                    <button onClick={() => navigateToServiceDetail(_id)} className="btn btn-primary">Buy Now</button>
                 </div>
             </div>
         </div>

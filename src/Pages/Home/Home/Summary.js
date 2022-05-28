@@ -17,9 +17,9 @@ const Summary = () => {
                     <h3 className='text-xl font-bold'>Don't hesitate to contact us</h3>
                 </div>
                 <div className='ml-14 p-4'>
-                    <button onClick={() => navigate('/product')} class="btn btn-primary text-xl mx-8">Buy Now</button>
+                    <button onClick={() => navigate('/product')} className="btn btn-primary text-xl mx-8">Buy Now</button>
 
-                    <a class="btn btn-primary text-xl" href="/#contact">Contact Us</a>
+                    <a className="btn btn-primary text-xl" href="/#contact">Contact Us</a>
                 </div>
             </div>
         </div >
