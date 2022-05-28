@@ -6,6 +6,7 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import google from '../../../images/icon/google.png'
 import Loading from '../../Shared/Loading/Loading';
 import { toast } from 'react-toastify';
+import useToken from '../../../hooks/useToken';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -26,12 +27,13 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-
+    const [token] = useToken(user || gUser);
     useEffect(() => {
-        if (user || gUser) {
+        if (token) {
             navigate(from, { replace: true });
+
         }
-    }, [user, gUser, from, navigate])
+    }, [from, token, navigate])
     let errorMessage;
     if (loading || gLoading) {
         return <Loading></Loading>
@@ -40,10 +42,12 @@ const Login = () => {
     if (gError || error) {
         errorMessage = <p className='text-red-500'>{error?.message || gError.message}</p>
     }
-    const onSubmit = data => {
+    const onSubmit = async (data) => {
         console.log(data);
-        signInWithEmailAndPassword(data.email, data.password);
+        await signInWithEmailAndPassword(data.email, data.password);
         toast('user login success')
+
+
     };
     return (
         <div className='flex h-screen justify-center items-center my-4'>

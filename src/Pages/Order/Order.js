@@ -98,7 +98,7 @@ const Order = () => {
                             <input
                                 type="email"
                                 name='email'
-                                disabled
+                                readOnly
                                 className="input input-bordered w-full max-w-xs"
                                 value={user?.email}
                             />
@@ -128,7 +128,8 @@ const Order = () => {
                             <input
                                 type="number"
                                 name='amount'
-                                disabled
+                                placeholder='total amount'
+                                readOnly
                                 className="input input-bordered w-full max-w-xs font-bold "
                                 value={totalPrice}
                             />
@@ -142,6 +143,7 @@ const Order = () => {
                             <input
                                 type="text"
                                 required
+                                placeholder='your address'
                                 name='address'
                                 className="input input-bordered w-full max-w-xs"
                             />
@@ -154,6 +156,7 @@ const Order = () => {
                             <input
                                 type="number"
                                 required
+                                placeholder='Mobile Number'
                                 name='phone'
                                 className="input input-bordered w-full max-w-xs"
                             />

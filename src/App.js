@@ -14,6 +14,7 @@ import SignUp from './Pages/Login/SignUp/SignUp';
 import Order from './Pages/Order/Order';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import MyOrder from './Pages/Dashboard/MyOrder';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
         <Route path='/dashboard' element={
           <RequireAuth><Dashboard ></Dashboard></RequireAuth>
         }>
-
+          <Route path='/dashboard/myorder' element={<MyOrder></MyOrder>}></Route>
 
         </Route>
 
