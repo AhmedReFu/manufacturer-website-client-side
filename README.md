@@ -2,7 +2,10 @@
 
 This project was taillwind css with [Taillwind](https://tailwindcss.com/).
 
-
+##Admin
+admin@computerpartsworld.com
+##Password
+123456
 
 ## Live Site
 
